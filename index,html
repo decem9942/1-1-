@@ -1,0 +1,21 @@
+import java.util.*;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        double d = scan.nextDouble();  // 距離 (km)
+        int s = scan.nextInt();        // 歩幅 (cm)
+
+        double distanceInCm = d * 100000;
+        
+        double steps = distanceInCm / s;
+
+        if (steps >= 10000) {
+            System.out.println("yes");
+        } else {
+            System.out.println("no");
+        }
+    }
+}
